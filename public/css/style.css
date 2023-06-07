@@ -1,0 +1,335 @@
+/* -------------------> BODY CUSTOMIZE <--------------------------- */
+
+body {
+    background-image: url('/assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* -------------------> NAVBAR SECTION <--------------------------- */
+
+.flex {
+    display: flex;
+    gap: 2rem;
+
+}
+
+/* ---------> MAIN DESKTOP CONTENT VIEW PORT <-----------*/
+
+/* ----> NAVBAR <---- */
+.mobile-toggle {
+    display: none;
+}
+
+.brand-image {
+    margin: 2rem;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.primary-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 1rem 3.5rem;
+    background-color: rgba(225, 225, 225, 0.04);
+    backdrop-filter: blur(40.7742px);
+}
+
+.horizontal-line {
+    min-width: 26.75rem;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: absolute;
+    top: 3.5rem;
+    margin-left: 64px;
+    z-index: 1;
+}
+
+.primary-navigation a {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.19rem;
+    letter-spacing: 2.7px;
+    max-width: 8.125rem;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.primary-navigation span {
+    font-weight: 700;
+    margin-inline-end: 0.75rem;
+}
+
+/* -------------------> MAIN CONTENT <--------------------------- */
+
+.container {
+    max-width: 450px;
+    height: 382px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25rem;
+    margin-left: -17rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container p:first-child {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #D0D6F9;
+    margin: 0;
+    padding-right: 75px;
+}
+
+.container p:nth-child(2) {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+    padding-top: 24px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.container p:last-child {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.5px;
+    line-height: 32px;
+    padding-top: 24px;
+    color: #D0D6F9;
+    margin: 0;
+}
+
+.exploreCircle {
+    width: 274px;
+    height: 274px;
+    left: 63.12%;
+    top: 395px;
+    position: absolute;
+
+}
+
+.circle {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.circle p {
+    position: absolute;
+    height: 37px;
+    left: 22.63%;
+    right: 23.36%;
+    top: calc(50% - 37px/2 + 0.5px);
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    margin-top: -10px;
+}
+@media (max-width: 768px) {
+    body {
+        background-image: url('/assets/home/background-home-tablet.jpg');
+        height: 1024px;
+    }
+
+    .primary-navigation {
+        padding: 1rem 1rem;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .primary-navigation a {
+        font-size: 0.81rem;
+        line-height: 1.06rem;
+        letter-spacing: 0.4px;
+    }
+
+    .primary-navigation span {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .container {
+        width: 450px;
+        height: 334px;
+        margin-top: -80px;
+        margin-left: -0.5rem;
+
+    }
+
+    .container p:first-child {
+        font-size: 1.13rem;
+        line-height: 1.25rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .container p:nth-child(2) {
+        font-size: 9.375rem;
+        line-height: 9.38rem;
+    }
+
+    .container p:last-child {
+        font-size: 1.06rem;
+        padding: 0 3px;
+        line-height: 1.75rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    .exploreCircle {
+        display: flex;
+        width: 242px;
+        height: 242px;
+        left: 50%;
+        top: 50%;
+        inset: 43.31rem 0 0 13.5rem;
+
+    }
+}
+
+/*------------> Mobile view port <-----------------  */
+
+@media (max-width:35em) {
+    body {
+        background-image: url('/assets/home/background-home-mobile.jpg');
+    }
+
+    .primary-navigation {
+        position: fixed;
+        flex-direction: column;
+        inset: 0 0 0 40%;
+        padding: min(30vh, 10em) 2em;
+        background-color: rgba(225, 225, 225, 0.04);
+        backdrop-filter: blur(40.7742px);
+        gap: 2em;
+        z-index: 1000;
+        transition: transform 350ms ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .primary-navigation[data-visible='true'] {
+        transform: translateX(0%);
+
+    }
+
+    .mobile-toggle[aria-expanded='true'] {
+        background-image: url('/assets/shared/icon-close.svg');
+        background-position: center;
+        background-color: rgba(225, 225, 225, 0.04);
+
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .mobile-toggle[aria-expanded='false'] {
+        background-color: rgba(225, 225, 225, 0.04);
+        background-position: center;
+    }
+
+    .navMini {
+        flex-direction: column;
+    }
+
+    .mobile-toggle {
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        z-index: 9999;
+        top: 2rem;
+        right: 2rem;
+        width: 2rem;
+        aspect-ratio: 1;
+        background-image: url('/assets/shared/icon-hamburger.svg');
+        border: 0;
+    }
+
+    /* ---->MAIN CONTENT <---*/
+    .container {
+        width: 20.44rem;
+        height: 334px;
+        display: flex;
+        text-align: start;
+        margin-top: -6rem;
+        margin-left: -0.5rem;
+    
+    }
+
+    .container p:first-child {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 0;
+        letter-spacing: 1px;
+
+    }
+
+    .container p:nth-child(2) {
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 6.25rem;
+        padding-top: 24px;
+    }
+
+    .container p:last-child {
+        font-size: 0.94rem;
+        padding: 0 1px;
+        line-height: 1.56rem;
+        margin: 0 2px;
+    }
+
+    .exploreCircle {
+        width: 9.38rem;
+        height: 9.38rem;
+        margin-left: -30px;
+    }
+
+    .circle p {
+        font-size: 1.25rem;
+        line-height: 0.9rem;
+        letter-spacing: 1px;
+        margin-top: -0.1px;
+    }
+
+}

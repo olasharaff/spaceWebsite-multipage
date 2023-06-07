@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/destination-titan.css">
+    <title>Frontend Mentor | Space tourism website</title>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+     <header class="primary-header flex">
+         <div class="brand-image">
+             <img src="/assets/shared/brand.svg" alt="Brand image">
+             <span class="horizontal-line"></span>
+         </div>
+         <button class="mobile-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+                 class="sr-only"></span></button>
+         <nav>
+             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                 <div class="navMini flex">
+                     <li class="active"><a href="/home"><span aria-hidden="true">01</span>Home</a></li>
+                     <li><a href="/destination-moon"><span aria-hidden="true">02</span>Destination</a></li>
+                     <li><a href="/crew-commander"><span aria-hidden="true">03</span>Crew</a>
+                     </li>
+                     <li><a href="/technology-vehicle" aria-hidden="true"><span>04</span>Technology</a>
+                     </li>
+                 </div>
+             </ul>
+         </nav>
+     </header>
